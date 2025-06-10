@@ -249,6 +249,19 @@ header .form-button{
     width: 90%;
 }
 
+@media (max-width:768px) {
+  .modal-container{
+    width: 50vw;
+  }
+  
+}
+
+@media (max-width:480px) {
+  .modal-container{
+    width: 70vw;
+  }
+}
+
 input{
   outline: none;
   padding: 15px 20px;
