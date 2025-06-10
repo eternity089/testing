@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img src="img/logo.svg" alt="logo" width="100">
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <div class="nav-container">
+        <nav>
+          <li>littlehome@gmail.com</li>
+          <li>г.Вологда, Пошехонское ш., д.22</li>
+          <li>+7 (817) 555-00-00</li>
+        </nav>
+        <form action="#loginModal">
+          <button class="form-button">Оформить заказ</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="main-page">
+      <div class="main-container">
+        <h1>Строим уютное жильё для вашей семьи!</h1>
+        <form action="#loginModal">
+          <button class="form-button">Оформить заказ</button>
+        </form>
+      </div>
+    </section>
+    <section class="work-type">
+      <div class="type-container">
+        <h2>Виды производимых работ</h2>
+        <div class="type-content">
+          <div class="type-block">
+            <img src="img/project.png" alt="">
+            <h3>Проектирование <br>здания</h3>
+            <p>Разработаем индвидуальный макет по вашим требованиям</p>
+          </div>
+          <div class="type-block">
+            <img src="img/found.png" alt="">
+            <h3>Фундаметальные <br>работы</h3>
+            <p>Обеспечиваем прочность и устойчивость для вас</p>
+          </div>
+          <div class="type-block">
+            <img src="img/crovel.png" alt="">
+            <h3>Кровельные <br>работы</h3>
+            <p>Защищаем вас от дождя и ветра</p>
+          </div>
+          <div class="type-block">
+            <img src="img/decor.png" alt="">
+            <h3>Отделочные<br> работы</h3>
+            <p>Наводим красоту и уют для вас</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- модальное окно -->
+     <section class="modal" id="logupModal">
+      <div class="modal-container">
+        <div class="modal-header">
+           <h2>Авторизация</h2>
+          <a href="#" title="закрыть" class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M1 1L13 13M1 13L13 1L1 13Z" stroke="#2C1800" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="modal-content">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="password" placeholder="Пароль">
+          <form action="order/order.html">
+            <button class="form-button">Авторизация</button>
+          </form>
+          <a href="#loginModal">У меня нет аккаунта</a>
+        </div>
+      </div>
+     </section>
+      <section class="modal" id="loginModal">
+      <div class="modal-container">
+        <div class="modal-header">
+           <h2>Регистрация</h2>
+          <a href="#" title="закрыть" class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M1 1L13 13M1 13L13 1L1 13Z" stroke="#2C1800" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="modal-content">
+          <input type="text" placeholder="ФИО">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="password" placeholder="Пароль">
+          <button class="form-button" onclick="window.location.href='order/order.html';">Регистрация</button>
+          <a href="#logupModal">У меня есть аккаунт</a>
+        </div>
+      </div>
+     </section>
+     
+    <section class="materials">
+      <div class="materials-container">
+        <h2>материалы</h2>
+        <div class="materials-content">
+          <div class="material-block">
+            <img src="img/wood.png" alt="">
+            <h3>Древесина натуральная</h3>
+          </div>
+          <div class="material-block">
+            <img src="img/metall.png" alt="">
+            <h3>Металлочерепица</h3>
+          </div>
+          <div class="material-block">
+            <img src="img/cotton.png" alt="">
+            <h3>Минеральная вата</h3>
+          </div>
+          <div class="material-block">
+            <img src="img/brick.png" alt="">
+            <h3>Кирпич керамический</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news-container">
+        <h2>наши новости</h2>
+        <div class="news-content">
+          <div class="new-block">
+            <img src="img/garage.png" alt="">
+            <h3>Возобновляем построение
+              гаража с 15.06.25г.</h3>
+          </div>
+          <div class="new-block">
+            <img src="img/build.png" alt="">
+            <h3>Возобновляем работы
+              с 21.06.25г.</h3>
+          </div>
+          <div class="new-block">
+            <img src="img/brigade.png" alt="">
+            <h3>Мы расширили бригаду
+              строителей</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="buildings">
+      <div class="building-container">
+        <div class="build home">
+          <div class="build-content">
+            <h2>строительство жилых домов</h2>
+            <div class="build-content-text">
+              <p>Индивидуальные жилые дома любой сложности — от небольших коттеджей до трёхэтажных домов. Мы реализуем
+                проекты «под ключ» или поэтапно, учитывая все пожелания клиента.</p>
+              <h4>Предоставляемые услуги:</h4>
+              <ul>
+                <li>Проектирование дома</li>
+                <li>Подготовительные работы</li>
+                <li>Фундаментные работы</li>
+                <li>Строительство каркаса и стен</li>
+                <li>Кровельные работы</li>
+                <li>Утепление и гидроизоляция</li>
+                <li>Внутренние отделочные работы</li>
+                <li>Инженерные системы</li>
+                <li>Благоустройство территории</li>
+              </ul>
+            </div>
+            <form action="#loginModal">
+              <button class="form-button">Оформить заказ</button>
+            </form>
+          </div>
+          <div class="build-img">
+            <img src="img/home.png" alt="">
+          </div>
+        </div>
+        <div class="build bathroom">
+          <div class="build-content">
+            <h2>строительство бань</h2>
+            <div class="build-content-text">
+              <p>Бани различного типа — от классических русских до современных саун — с учетом всех требований к
+                комфортному отдыху и функциональности.</p>
+              <h4>Предоставляемые услуги:</h4>
+              <ul>
+                <li>Проектирование бани</li>
+                <li>Подготовительные работы</li>
+                <li>Фундаментные работы</li>
+                <li>Строительство стен и кровли</li>
+                <li>Внутренняя отделка</li>
+                <li>Инженерные системы</li>
+                <li>Дополнительные опции: установка бассейна, террасы, зоны отдыха</li>
+              </ul>
+            </div>
+            <form action="#loginModal">
+              <button class="form-button">Оформить заказ</button>
+            </form>
+          </div>
+          <div class="build-img">
+            <img src="img/bath.png" alt="">
+          </div>
+        </div>
+        <div class="build basement">
+          <div class="build-content">
+            <h2>строительство подсобных помещений</h2>
+            <div class="build-content-text">
+              <p>Постройка различных подсобных зданий — гаражей, сараев, мастерских, хозпостроек — для повышения
+                комфорта
+                и функциональности участка.</p>
+              <h4>Предоставляемые услуги:</h4>
+              <ul>
+                <li>Проектирование подсобных зданий</li>
+                <li>Подготовительные работы</li>
+                <li>Строительные работы</li>
+                <li>Внутренняя отделка и оборудование</li>
+                <li>Инженерные коммуникации</li>
+              </ul>
+            </div>
+            <form action="#loginModal">
+              <button class="form-button">Оформить заказ</button>
+            </form>
+          </div>
+          <div class="build-img">
+            <img src="img/basement.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="technology">
+      <div class="technology-container">
+        <h2>наша техника</h2>
+        <div class="technology-content">
+          <div class="technology-block">
+            <img src="img/Digger.png" alt="">
+            <h3>Экскаваторы</h3>
+          </div>
+          <div class="technology-block">
+            <img src="img/Bulldozer.png" alt="">
+            <h3>Бульдозеры</h3>
+          </div>
+          <div class="technology-block">
+            <img src="img/Crane.png" alt="">
+            <h3>Автокраны</h3>
+          </div>
+          <div class="technology-block">
+            <img src="img/Concrete Mixer.png" alt="">
+            <h3>Бетономешалки</h3>
+          </div>
+          <div class="technology-block">
+            <img src="img/Welding Machine.png" alt="">
+            <h3>Сварочные установки</h3>
+          </div>
+          <div class="technology-block">
+            <img src="img/Laser Level.png" alt="">
+            <h3>Лазерные уровни</h3>
+          </div>
+          <div class="technology-block">
+            <img src="img/gluegun.png" alt="">
+            <h3>Монтажные пистолеты</h3>
+          </div>
+          <div class="technology-block">
+            <img src="img/Workshop.png" alt="">
+            <h3>Мобильные мастерские</h3>
+          </div>
+        </div>
+        <form action="#loginModal">
+          <button class="form-button">Оформить заказ</button>
+        </form>
+      </div>
+    </section>
+    <section class="documentation">
+      <div class="documentation-container">
+        <h2>документация</h2>
+        <div class="documentation-content">
+          <ul>
+            <li><a href="#">Свидетельство о государственной регистрации юридического лица</a></li>
+            <li><a href="#">Лицензия на осуществление строительной деятельности</a></li>
+            <li><a href="#">Свидетельство о допуске к определенным видам работ.</a></li>
+            <li><a href="#">Сертификаты соответствия на используемые материалы и технологии</a></li>
+            <li><a href="#">Сертификаты квалификации и профессиональной подготовки сотрудников</a></li>
+            <li><a href="#">Договора страхования ответственности застройщика.</a></li>
+            <li><a href="#">Паспорт безопасности и охраны труда</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-block">
+        <img src="img/logo.svg" alt="">
+      </div>
+      <div class="footer-block">
+        <a href="#">littlehome@gmail.com</a>
+        <a href="#">г.Вологда, Пошехонское ш., д.22</a>
+        <a href="#">+7 (817) 555-00-00</a>
+      </div>
+      <div class="footer-block block-static">
+        <a href="#">Виды работ и материалы</a>
+        <a href="#">Новости</a>
+        <a href="#">Строительство</a>
+        <a href="#">Техника</a>
+        <a href="#">Документация</a>
+      </div>
+      <div class="footer-block static">
+        <div class="button-up" id="button-up">
+          <a href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <path d="M2 17L17 2M17 2L32 17M17 2V32" stroke="white" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="icons">
+        <img src="img/vk.png" alt="">
+        <img src="img/Telegram.png" alt="">
+        <img src="img/WhatsApp.png" alt="">
+      </div>
+      <h4>© Силинская Ксения, 2025г.</h4>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>

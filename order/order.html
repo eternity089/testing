@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заказ</title>
+  <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img src="../img/logo.svg" alt="logo" width="100">
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <div class="nav-container">
+        <nav>
+          <li>littlehome@gmail.com</li>
+          <li>г.Вологда, Пошехонское ш., д.22</li>
+          <li>+7 (817) 555-00-00</li>
+        </nav>
+        <form action="#loginModal">
+          <button class="form-button">Оформить заказ</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main id="top">
+    <section class="main-page">
+      <div class="main-container">
+        <h1>Строим уютное жильё для вашей семьи!</h1>
+        <form action="#loginModal">
+          <button class="form-button">Оформить заказ</button>
+        </form>
+      </div>
+    </section>
+    <!-- модальное окно -->
+    <section class="modal" id="logupModal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h2>Авторизация</h2>
+          <a href="#" title="закрыть" class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M1 1L13 13M1 13L13 1L1 13Z" stroke="#2C1800" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="modal-content">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="password" placeholder="Пароль">
+          <form action="order.html">
+            <button class="form-button">Авторизация</button>
+          </form>
+          <a href="#loginModal">У меня нет аккаунта</a>
+        </div>
+      </div>
+    </section>
+    <section class="modal" id="loginModal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h2>Регистрация</h2>
+          <a href="#" title="закрыть" class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M1 1L13 13M1 13L13 1L1 13Z" stroke="#2C1800" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="modal-content">
+          <input type="text" placeholder="ФИО">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="password" placeholder="Пароль">
+          <form action="order.html">
+            <button class="form-button">Регистрация</button>
+          </form>
+          <a href="#logupModal">У меня есть аккаунт</a>
+        </div>
+      </div>
+    </section>
+    <section class="building-info">
+      <div class="info-container">
+        <div class="info-block">
+          <h2>строительство подсобных помещений</h2>
+          <h4>Предоставляемые услуги:</h4>
+          <div class="info-content">
+            <li>Проектирование подсобных зданий.</li>
+            <li>Подготовительные работы.</li>
+            <li>Строительные работы.</li>
+            <li>Внутренняя отделка и оборудование.</li>
+            <li>Инженерные коммуникации.</li>
+          </div>
+        </div>
+        <div class="info-block">
+          <h2>строительство жилых домов</h2>
+          <h4>Предоставляемые услуги:</h4>
+          <div class="info-content">
+            <li>Проектирование дома.</li>
+            <li>Подготовительные работы.</li>
+            <li>Фундаментные работы.</li>
+            <li>Строительство каркаса и стен.</li>
+            <li>Кровельные работы.</li>
+            <li>Утепление и гидроизоляция.</li>
+            <li>Внутренние отделочные работы.</li>
+            <li>Инженерные системы.</li>
+            <li>Благоустройство территории.</li>
+          </div>
+        </div>
+        <div class="info-block">
+          <h2>строительство бань</h2>
+          <h4>Предоставляемые услуги:</h4>
+          <div class="info-content">
+            <li>Проектирование бани.</li>
+            <li>Подготовительные работы.</li>
+            <li>Фундаметальные работы.</li>
+            <li>Строительство стен и кровли.</li>
+            <li>Внутренняя отделка.</li>
+            <li>Инженерные системы.</li>
+            <li>Дополнительные опции: установка бассейна, террасы, зоны отдыха.</li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="order-form">
+      <div class="order-container">
+        <h2>заполните форму</h2>
+        <div class="form-block">
+          <input type="text" name="text" id="type" placeholder="Тип застройки">
+          <input type="text" name="text" id="size" placeholder="Размер (м2)">
+          <input type="text" name="text" id="adress" placeholder="Адрес застройки">
+          <input type="text" name="text" id="name" placeholder="ФИО">
+          <input type="tel" name="phone" id="phone" placeholder="Номер телефона">
+          <form>
+            <button class="form-button">Оформить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="raiting">
+      <div class="raiting-container">
+        <h2>отзывы о нас</h2>
+        <div class="raiting-content">
+          <div class="raiting-block">
+            <div class="block-head">
+              <img src="../img/user.png" alt="">
+              <h4>Николай Кравц</h4>
+            </div>
+            <div class="block-content">
+              <h4>Заказывал постройку дома. Всё сделали в  срок и качественно.</h4>
+              <img src="../img/rate-img.png" alt="">
+            </div>
+          </div>
+          <div class="raiting-block">
+            <div class="block-head">
+              <img src="../img/user.png" alt="">
+              <h4>Николай Кравц</h4>
+            </div>
+            <div class="block-content">
+              <h4>Заказывал постройку дома. Всё сделали в  срок и качественно.</h4>
+              <img src="../img/rate-img1.png" alt="">
+            </div>
+          </div>
+          <div class="raiting-block">
+            <div class="block-head">
+              <img src="../img/user.png" alt="">
+              <h4>Николай Кравц</h4>
+            </div>
+            <div class="block-content">
+              <h4>Заказывал постройку дома. Всё сделали в  срок и качественно.</h4>
+              <img src="../img/rate-img.png" alt="">
+            </div>
+          </div>
+          <div class="raiting-block">
+            <div class="block-head">
+              <img src="../img/user.png" alt="">
+              <h4>Николай Кравц</h4>
+            </div>
+            <div class="block-content">
+              <h4>Заказывал постройку дома. Всё сделали в  срок и качественно.</h4>
+              <img src="../img/rate-img1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+   <footer>
+    <div class="footer-container">
+      <div class="footer-block">
+        <img src="../img/logo.svg" alt="">
+      </div>
+      <div class="footer-block">
+        <a href="#">littlehome@gmail.com</a>
+        <a href="#">г.Вологда, Пошехонское ш., д.22</a>
+        <a href="#">+7 (817) 555-00-00</a>
+      </div>
+      <div class="footer-block block-static">
+        <a href="../index.html">Главная</a>
+        <a href="../index.html">Виды работ и материалы</a>
+        <a href="../index.html">Новости</a>
+        <a href="../index.html">Строительство</a>
+        <a href="../index.html">Техника</a>
+        <a href="../index.html">Документация</a>
+      </div>
+      <div class="footer-block static">
+        <div class="button-up" id="button-up">
+          <a href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <path d="M2 17L17 2M17 2L32 17M17 2V32" stroke="white" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="icons">
+        <img src="../img/vk.png" alt="">
+        <img src="../img/Telegram.png" alt="">
+        <img src="../img/WhatsApp.png" alt="">
+      </div>
+      <h4>© Силинская Ксения, 2025г.</h4>
+    </div>
+  </footer>
+  <script src="../main.js"></script>
+</body>
+
+</html>
